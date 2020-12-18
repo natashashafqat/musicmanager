@@ -22,6 +22,8 @@ public class Song {
 
     private String name;
 
+    private String artist;
+
     @Column(name = "cover_url")
     @JsonProperty("cover_url")
     private String coverUrl;
