@@ -18,6 +18,8 @@ This application runs on Java 8, and has been built using Gradle 6.7.1.
 ./gradlew bootRun
 ```
 
+The application will now be accessible at `http://localhost:8080`.
+
 ## Technical Aspects
 
 Spring Boot is a fantastic framework for creating MVC applications.
