@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.math.BigInteger;
+import java.util.Collection;
 import java.util.Date;
 
 @Data
@@ -21,4 +22,9 @@ public class Playlist {
     @Column(name = "created_on")
     @JsonProperty("created_on")
     private Date createdOn;
+
+    @ElementCollection(targetClass = java.util.HashSet.class)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn
+    private Collection<Song> songs;
 }
