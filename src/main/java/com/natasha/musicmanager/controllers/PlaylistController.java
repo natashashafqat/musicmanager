@@ -13,7 +13,8 @@ public class PlaylistController {
     private PlaylistService playlistService;
 
     @GetMapping("/")
-    public String listPlaylistsAndSongs() {
+    public String listPlaylistsAndSongs(Model model) {
+        model.addAttribute("playlists", playlistService.getAllPlaylists());
         return "index";
     }
 }
