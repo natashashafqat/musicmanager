@@ -24,6 +24,16 @@ insert into playlist(
     CURRENT_TIMESTAMP
 );
 
+insert into playlist(
+    id,
+    name,
+    created_on
+) values(
+    2,
+    'Rock Anthems',
+    CURRENT_TIMESTAMP
+);
+
 insert into song(
     id,
     name,
@@ -33,10 +43,10 @@ insert into song(
     created_on
 ) values(
     1,
-    'Jazz Song 1',
-    'Miles B',
+    'So What',
+    'Miles Davis',
     1,
-    'https://cdn.kqed.org/wp-content/uploads/sites/23/2014/04/jazz.jpg',
+    'https://images-na.ssl-images-amazon.com/images/I/8169C1-UkyL._AC_SL1500_.jpg',
     CURRENT_TIMESTAMP
 );
 
@@ -49,9 +59,41 @@ insert into song(
     created_on
 ) values(
     2,
-    'Jazz Song 2',
-    'James A',
+    'Naima, Pt 2',
+    'John Coltrane',
     1,
-    'https://www.nme.com/wp-content/uploads/2019/07/GettyImages-158786027.jpg',
+    'https://direct.rhapsody.com/imageserver/images/alb.313452845/600x600.jpg',
+    CURRENT_TIMESTAMP
+);
+
+insert into song(
+    id,
+    name,
+    artist,
+    playlist_id,
+    cover_url,
+    created_on
+) values(
+    3,
+    'Thunderstruck',
+    'ACDC',
+    2,
+    'https://i1.sndcdn.com/artworks-000129437053-bgvku6-t500x500.jpg',
+    CURRENT_TIMESTAMP
+);
+
+insert into song(
+    id,
+    name,
+    artist,
+    playlist_id,
+    cover_url,
+    created_on
+) values(
+    4,
+    'All The Small Things',
+    'Blink-182',
+    2,
+    'https://upload.wikimedia.org/wikipedia/en/2/29/Blink-182_-_All_the_Small_Things_cover.jpg',
     CURRENT_TIMESTAMP
 );
