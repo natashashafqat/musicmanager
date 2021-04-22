@@ -1,4 +1,4 @@
-# Music Manager
+# Music Manager - WIP
 
 Java application for managing your music, built with Spring Boot. ![spring-boot](https://www.dariawan.com/media/images/tech-spring-boot.width-1024.png)
 
